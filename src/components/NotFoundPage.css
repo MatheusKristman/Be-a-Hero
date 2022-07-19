@@ -1,0 +1,68 @@
+.not-found-container {
+    background-color: #F0F0F5;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.not-found-title {
+    color: #41414d;
+}
+
+.not-found-back-btn {
+    height: 50px;
+    width: 230px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    color: #F0F0F5;
+    background-color: #E02041;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+.not-found-back-btn:hover {
+    background-color: #bb1c37;
+}
+
+.not-found-back-btn:active {
+    background-color: #13131A;
+}
+
+@media screen and (max-width: 420px) {
+    .not-found-title {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .not-found-logo {
+        width: 150px;
+    }
+
+    .not-found-title {
+        font-size: 24px;
+    }
+
+    .not-found-back-btn {
+        width: 160px;
+        height: 40px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    .not-found-logo {
+        width: 125px;
+    }
+
+    .not-found-title {
+        font-size: 18px;
+    }
+}

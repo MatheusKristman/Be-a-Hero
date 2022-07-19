@@ -1,0 +1,290 @@
+.newcase-container {
+    padding: 0 160px 0 160px;
+    background-color: #F0F0F5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newcase-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 96px;
+    box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.2);
+    height: 580px;
+    border-radius: 10px;
+    background-color: #F0F0F5;
+    gap: 50px;
+    width: 80%;
+}
+
+.newcase-info {
+    width: 340px;
+}
+
+.newcase-logo {
+    width: 191px;
+    height: auto;
+    margin-bottom: 60px;
+}
+
+.newcase-title {
+    font-weight: 500;
+    font-size: 36px;
+    color: #13131A;
+    margin-bottom: 30px;
+}
+
+.newcase-desc {
+    font-weight: 400;
+    font-size: 18px;
+    color: #737380;
+    margin-bottom: 80px;
+}
+
+.link-home {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    color: #41414D;
+    cursor: pointer;
+}
+
+.newcase-form {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+}
+
+.newcase-input-title,
+.newcase-input-value {
+    width: 100%;
+    height: 60px;
+    padding: 0 24px;
+    border: 2px solid #DCDCE5;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.newcase-input-desc {
+    width: 100%;
+    height: 175px;
+    padding: 19px 24px;
+    border: 2px solid #DCDCE5;
+    border-radius: 10px;
+    font-size: 18px;
+    resize: none;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.newcase-input-desc::placeholder {
+    color: #A8A8B3;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.newcase-cancel-btn {
+    width: 40%;
+    height: 60px;
+    background-color: #F0F0F5;
+    border: 2px solid #DCDCE5;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+.newcase-cancel-btn:hover {
+    background-color: #DCDCE5;
+}
+
+.newcase-cancel-btn:active {
+    background-color: #13131A;
+    color: #F0F0F5;
+}
+
+.newcase-ok-btn {
+    width: 60%;
+    height: 60px;
+    background-color: #E02041;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #F0F0F5;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+.newcase-ok-btn:hover {
+    background-color: #bb1c37;
+}
+
+.newcase-ok-btn:active {
+    background-color: #13131A;
+}
+
+.error {
+    border: 2px solid red;
+}
+
+.error::placeholder {
+    color: red;
+}
+
+@media screen and (max-width: 1280px) {
+    .newcase-wrapper {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .newcase-container {
+        padding: 0;
+    }
+
+    .newcase-wrapper {
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    /* .newcase-logo {
+        width: 140px;
+    }
+
+    .newcase-title {
+        font-size: 26px;
+    }
+
+    .newcase-desc {
+        font-size: 16px;
+    }
+
+    .link-home {
+        font-size: 16px;
+    } */
+
+    .newcase-wrapper {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .newcase-info {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .newcase-wrapper {
+        padding: 50px;
+        height: 100%;
+    }
+
+    .newcase-info,
+    .newcase-form {
+        width: 100%;
+    }
+
+    .newcase-logo {
+        width: 150px;
+    }
+
+    .newcase-title {
+        font-size: 26px;
+    }
+
+    .newcase-desc {
+        font-size: 16px;
+    }
+
+    .link-home {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .newcase-logo {
+        width: 120px;
+    }
+
+    .newcase-title {
+        font-size: 18px;
+    }
+
+    .newcase-desc,
+    .link-home {
+        font-size: 14px;
+    }
+
+    .newcase-input-title,
+    .newcase-input-value {
+        height: 40px;
+        padding: 0 13px;
+        font-size: 14px;
+    }
+
+    .newcase-input-desc {
+        height: 140px;
+        padding: 13px;
+        font-size: 14px;
+    }
+
+    .newcase-cancel-btn,
+    .newcase-ok-btn {
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .newcase-desc {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    .newcase-wrapper {
+        padding: 25px;
+    }
+
+    .newcase-logo {
+        width: 100px;
+    }
+
+    .newcase-title {
+        font-size: 14px;
+    }
+
+    .newcase-desc {
+        font-size: 12px;
+    }
+
+    .newcase-cancel-btn,
+    .newcase-ok-btn {
+        font-size: 13px;
+    }
+}

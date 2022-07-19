@@ -1,0 +1,256 @@
+.container {
+    position: relative;
+    background-color: #F0F0F5;
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px 150px 80px 150px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo-user {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 50px;
+}
+
+.wellcome-user {
+    color: #13131A;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.btns-header {
+    display: flex;
+    align-items: center;
+}
+
+.case-btn {
+    height: 50px;
+    width: 230px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    color: #F0F0F5;
+    background-color: #E02041;
+    border: none;
+    border-radius: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+.case-btn:hover {
+    background-color: #bb1c37;
+}
+
+.case-btn:active {
+    background-color: #13131A;
+}
+
+.case-btn-mobile {
+    height: 50px;
+    width: 50px;
+    font-family: inherit;
+    font-size: 30px;
+    color: #F0F0F5;
+    background-color: #E02041;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all ease 0.2s;
+    display: none;
+}
+
+.case-btn-mobile:hover {
+    background-color: #bb1c37;
+}
+
+.case-btn-mobile:active {
+    background-color: #13131A;
+}
+
+.logoff {
+    height: 50px;
+    width: 50px;
+    margin-top: 2px;
+    background-color: transparent;
+    border: 2px solid #DCDCE5;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+.logoff:hover {
+    background-color: #DCDCE5;
+}
+
+.logoff:active {
+    background-color: #13131A;
+}
+
+.cases-container {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cases-title {
+    font-weight: 500;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #13131A;
+    width: 100%;
+}
+
+.case-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 1230px;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+
+.case-box {
+    position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 25px;
+    width: 540px;
+}
+
+.case-title,
+.case-desc,
+.case-value {
+    font-size: 14px;
+    color: #41414D;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.case-title-text,
+.case-desc-text {
+    font-size: 18px;
+    color: #737380;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.case-value-text {
+    font-size: 18px;
+    color: #737380;
+    font-weight: 400;
+}
+
+.case-delete {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #A8A8B3;
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    .case-wrapper {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .case-box {
+        width: 540px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+
+    .logo {
+        margin-right: 25px;
+    }
+
+    .container {
+        padding: 40px 40px 80px 40px;
+    }
+
+    .case-btn-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .case-btn {
+        display: none;
+    }
+
+    .cases-title {
+        font-size: 26px;
+    }
+
+    .wellcome-user {
+        font-size: 16px;
+    }
+
+    .case-title-text,
+    .case-desc-text,
+    .case-value-text {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .logo {
+        height: 40px;
+
+    }
+
+    .wellcome-user {
+        font-size: 14px;
+        width: 90px;
+    }
+
+    .case-wrapper {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .logo {
+        margin-right: 15px;
+    }
+
+    .case-btn-mobile {
+        width: 35px;
+        height: 35px;
+        font-size: 21px;
+        margin-right: 5px;
+    }
+
+    .logoff {
+        width: 36px;
+        height: 36px;
+    }
+
+    .logoff img {
+        width: 18px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .logo {
+        display: none;
+    }
+}
